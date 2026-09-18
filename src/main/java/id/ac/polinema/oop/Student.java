@@ -26,22 +26,21 @@ public class Student {
         this.studentId = studentId;
         this.name = name;
         this.gpa = gpa;
-        throw new UnsupportedOperationException("Not implemented yet");
     }
 
     public String getStudentId() {
         // TODO: return studentId
-        throw new UnsupportedOperationException("Not implemented yet");
+        return studentId;
     }
 
     public String getName() {
         // TODO: return name
-        throw new UnsupportedOperationException("Not implemented yet");
+        return name;
     }
 
     public double getGpa() {
         // TODO: return gpa
-        throw new UnsupportedOperationException("Not implemented yet");
+        return gpa;
     }
 
     /**
@@ -54,6 +53,12 @@ public class Student {
      */
     public String getPredicate() {
         // TODO: implement the predicate logic per the rules above
-        throw new UnsupportedOperationException("Not implemented yet");
+        if (gpa >= 3.5) {
+            return ("Cum Laude");
+        }
+        if (gpa >= 3.0 && gpa < 3.5) {
+            return  ("Very Stisfactory");
+        }
+            return ("Satisfactory");
     }
 }
